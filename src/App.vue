@@ -1,12 +1,58 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
+            height="30"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link active" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link active" to="/about">About</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link active" to="/contact">Contact</router-link>
+            </li>
+          </ul>
+          <span class="navbar-text">Profile</span>
+        </div>
+      </div>
+    </nav>
   </div>
   <router-view />
 </template>
 
+<script lang="javascript">
+import * as mdb from 'mdb-ui-kit';
+
+export default {
+  mdb
+}
+</script>
+
 <style lang="scss">
+@import '~mdb-ui-kit/css/mdb.min.css';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +62,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding-bottom: 10px;
 
   a {
     font-weight: bold;
