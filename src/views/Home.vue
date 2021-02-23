@@ -27,7 +27,7 @@
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">
-              <i class="fab card-header hover-shadow fa-accusoft"></i>
+              <i class="fab card-header icon fa-accusoft"></i>
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the
@@ -40,7 +40,7 @@
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">
-              <i class="fab card-header hover-shadow fa-accusoft"></i>
+              <i class="fab card-header icon fa-accusoft"></i>
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the
@@ -53,7 +53,7 @@
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">
-              <i class="fab card-header hover-shadow fa-accusoft"></i>
+              <i class="fab card-header icon fa-accusoft"></i>
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the
@@ -80,3 +80,11 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+
+<style scoped lang="scss">
+    .icon {
+        font-size: 2em;
+        color: grey;
+        opacity: 0.4;
+    }
+</style>
